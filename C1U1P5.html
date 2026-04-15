@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Quiz</title>
+  <style>
+    /* Body & container */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      margin: 0;
+      padding: 40px 20px;
+      background: #f0f4f8;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    .quiz-container {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .quiz-container:hover {
+      transform: translateY(-3px);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+
+    p.question {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #34495e;
+    }
+
+    label {
+      display: block;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    label:hover {
+      background: #e8f0fe;
+      border-color: #4a90e2;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+      accent-color: #4a90e2;
+    }
+
+    .correct {
+      background-color: #e6f7e6 !important;
+      border-color: #28a745 !important;
+      color: #155724;
+      font-weight: bold;
+    }
+
+    .wrong {
+      background-color: #fce8e6 !important;
+      border-color: #dc3545 !important;
+      color: #721c24;
+      font-weight: bold;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4a90e2;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #357ab8;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+	
+	
+  </style>
+</head>
+<body>
+
+  <div class="quiz-container">
+    <h2>முதல் பருவம் - Part 5 </h2>
+    <form id="quiz">
+	
+	<div class="question-block">
+      <p class="question">1.  தொலைவில் உ ள்ள பொருளின் உருவத்தை அருகில் தோன்றச் செய்ய முடியும். அறிவியல் அறிஞர் கலீலியோ நிறுவிய கருத்து இது. இக்கருத்து திருவள்ளுவமாலை என்னும் நூலில் _________ எழுதிய பாடலில் இடம்பெற்றுள்ளது.</p>
+      <label><input type="radio" name="q1" value="நல்லாதனார்">நல்லாதனார்</label>
+      <label><input type="radio" name="q1" value="கபிலர்">கபிலர்</label>
+	  <label><input type="radio" name="q1" value="தொல்காப்பியர்">தொல்காப்பியர்</label>
+	  <label><input type="radio" name="q1" value="மாணிக்க வாசகர்">மாணிக்க வாசகர்</label><br>
+	</div>
+
+    <div class="question-block">
+      <p class="question">2. நிலம் தீ நீர் வளி விசும்போடு ஐந்தும் கலந்த மயக்கம் உலகம் ஆதலின் – என்ற பாடல்வரி இடம்பெற்றுள்ள நூல் எது?</p>
+      <label><input type="radio" name="q2" value="நற்றிணை">நற்றிணை</label>
+      <label><input type="radio" name="q2" value="பதிற்றுப்பத்து">பதிற்றுப்பத்து</label>
+	  <label><input type="radio" name="q2" value="தொல்காப்பியம்">தொல்காப்பியம்</label>
+      <label><input type="radio" name="q2" value="கார்நாற்பது">கார்நாற்பது</label><br>
+	</div>
+	
+	<div class="question-block">
+      <p class="question">3. கடல்நீர் முகந்த கமஞ்சூழ் எழிலி – என்ற பாடல்வரி இடம்பெற்றுள்ள நூல் எது?</p><br>
+      <label><input type="radio" name="q3" value="நற்றிணை">நற்றிணை</label>
+      <label><input type="radio" name="q3" value="பதிற்றுப்பத்து">பதிற்றுப்பத்து</label>
+	  <label><input type="radio" name="q3" value="தொல்காப்பியம்">தொல்காப்பியம்</label>
+      <label><input type="radio" name="q3" value="கார்நாற்பது">கார்நாற்பது</label><br>
+	</div>
+	
+	<div class="question-block">
+      <p class="question">4. கோட்சுறா எறிந்தெனச் சுருங்கிய நரம்பின் முடிமுதிர் பரதவர் – என்ற பாடல்வரி இடம்பெற்றுள்ள நூல் எது?</p>
+      <label><input type="radio" name="q4" value="நற்றிணை">நற்றிணை</label>
+      <label><input type="radio" name="q4" value="பதிற்றுப்பத்து">பதிற்றுப்பத்து</label>
+	  <label><input type="radio" name="q4" value="தொல்காப்பியம்">தொல்காப்பியம்</label>
+      <label><input type="radio" name="q4" value="கார்நாற்பது">கார்நாற்பது</label><br>
+	</div>
+	
+    <div class="question-block">
+      <p class="question">5. தினையளவு போதாச் சிறுபுல்நீர் நீண்ட பனையளவு காட்டும் – என்ற பாடல்வரி இடம்பெற்றுள்ள நூல் எது?</p>
+      <label><input type="radio" name="q5" value="நற்றிணை">நற்றிணை</label>
+      <label><input type="radio" name="q5" value="பதிற்றுப்பத்து">பதிற்றுப்பத்து</label>
+	  <label><input type="radio" name="q5" value="திருவள்ளுவமாலை">திருவள்ளுவமாலை</label>
+      <label><input type="radio" name="q5" value="கார்நாற்பது">கார்நாற்பது</label><br>
+	</div>
+
+    <div class="question-block">
+      <p class="question">6. தமிழ் மொழியின் இலக்கண வகைகள் ___________.</p>
+      <label><input type="radio" name="q6" value="4">4</label>
+      <label><input type="radio" name="q6" value="5">5</label>
+	  <label><input type="radio" name="q6" value="6">6</label>
+      <label><input type="radio" name="q6" value="7">7</label><br>
+	</div>
+	
+	<p>(குறிப்பு – தமிழ் மொழியின் இலக்கண வகைகள் ஐந்து. எழுத்து இலக்கணம், சொல் இலக்கணம், பொருள் இலக்கணம், யாப்பு இலக்கணம், அணி இலக்கணம் )</p></br>
+	
+    <div class="question-block">
+      <p class="question">7. _______________ என்பது இங்குக் கால அளவைக் குறிக்கிறது.</p><br>
+	  <label><input type="radio" name="q7" value="ஒலிப்பு">ஒலிப்பு</label>
+      <label><input type="radio" name="q7" value="மாத்திரை">மாத்திரை</label>
+	  <label><input type="radio" name="q7" value="வடிவம்">வடிவம்</label>
+      <label><input type="radio" name="q7" value="நேரம்">நேரம்</label><br>
+	</div>
+
+    <div class="question-block">
+      <p class="question">8. மெய் எழுத்துகள் ஒலிக்கும் கால அளவு?</p></br>
+      <label><input type="radio" name="q8" value="கால் மாத்திரை">கால் மாத்திரை</label>
+      <label><input type="radio" name="q8" value="அரை மாத்திரை">அரை மாத்திரை</label>
+	  <label><input type="radio" name="q8" value="ஒரு மாத்திரை">ஒரு மாத்திரை</label>
+      <label><input type="radio" name="q8" value="இரண்டு மாத்திரை">இரண்டு மாத்திரை</label><br>
+	</div>
+
+    <div class="question-block">
+      <p class="question">9. ஆய்த எழுத்தை ஒலிக்க ஆகும் கால அளவு?</p><br>
+      <label><input type="radio" name="q9" value="கால் மாத்திரை">கால் மாத்திரை</label>
+      <label><input type="radio" name="q9" value="அரை மாத்திரை">அரை மாத்திரை</label>
+	  <label><input type="radio" name="q9" value="ஒரு மாத்திரை">ஒரு மாத்திரை</label>
+      <label><input type="radio" name="q9" value="இரண்டு மாத்திரை">இரண்டு மாத்திரை</label><br>
+	</div>
+	
+    <div class="question-block">
+      <p class="question">10. கபிலர் – என்னும் பெயரில் உள்ள மாத்திரை அளவைக் கண்டுபிடி?</p>
+      <label><input type="radio" name="q10" value="2">2</label>
+      <label><input type="radio" name="q10" value="2.5">2.5</label>
+	  <label><input type="radio" name="q10" value="3">3</label>
+      <label><input type="radio" name="q10" value="3.5">3.5</label><br>
+	</div>
+
+    <div class="question-block">
+      <p class="question">11. கலைச் சொல் அறிவோம் – சரியானது எது?</p><br>
+	  <p>I. குரல்தேடல் – Voice Search</p>
+	  <p>II. இணையம் – Internet</p>
+	  <p>III. இடஞ்சுழி – Anti Clock wise</p>
+	  <p>IV. வலஞ்சுழி – Clock wise</p>
+      <label><input type="radio" name="q11" value="I, II மட்டும் சரி">I, II மட்டும் சரி</label>
+      <label><input type="radio" name="q11" value="II, III மட்டும் சரி">II, III மட்டும் சரி</label>
+	  <label><input type="radio" name="q11" value="III, IV மட்டும் சரி">III, IV மட்டும் சரி</label>
+      <label><input type="radio" name="q11" value="I, II, III, IV அனைத்தும் சரி">I, II, III, IV அனைத்தும் சரி</label><br>
+	</div>
+
+    <div class="question-block">
+      <p class="question">12. கலைச் சொல் அறிவோம் – சரியானது எது?</p><br>
+	  <p>I. செயலி – App</p>
+	  <p>II. முகநூல் – Facebook</p>
+	  <p>III. தொடுதிரை – Touch Screen</p>
+	  <p>IV. தேடுபொறி – Search engine</p>
+      <label><input type="radio" name="q12" value="I, II மட்டும் சரி">I, II மட்டும் சரி</label>
+      <label><input type="radio" name="q12" value="II, III மட்டும் சரி">II, III மட்டும் சரி</label>
+	  <label><input type="radio" name="q12" value="III, IV மட்டும் சரி">III, IV மட்டும் சரி</label>
+      <label><input type="radio" name="q12" value="I, II, III, IV அனைத்தும் சரி">I, II, III, IV அனைத்தும் சரி</label><br>
+	</div>
+
+    <div class="question-block">
+      <p class="question">13. கலைச் சொல் அறிவோம் – சரியானது எது?</p></br>
+	  <p>I. புலனம் – Whatsapp</p>
+	  <p>II. மின்னஞ்சல் – E-mail</p>
+	  <p>III. தொடுதிரை – Touch Screen</p>
+	  <p>IV. தேடுபொறி – Search engine</p>
+      <label><input type="radio" name="q13" value="I, II மட்டும் சரி">I, II மட்டும் சரி</label>
+      <label><input type="radio" name="q13" value="I, II, III, IV அனைத்தும் சரி">I, II, III, IV அனைத்தும் சரி</label>
+	  <label><input type="radio" name="q13" value="III, IV மட்டும் சரி">III, IV மட்டும் சரி</label>
+      <label><input type="radio" name="q13" value="II, III மட்டும் சரி">II, III மட்டும் சரி</label><br>
+	</div>
+
+    <div class="question-block">
+      <p class="question">14. பொருத்துக:</p><br>
+	  <p>I. இலக்கண நூல்கள் – தொல்காப்பியம், நன்னூல்</p>
+	  <p>II. சங்க இலக்கியம் – எட்டுத்தொகை, பத்துப்பாட்டு</p>
+	  <p>III. அறநூல்கள் – நாலடியார், திருக்குறள்</p>
+	  <p>IV. காப்பியங்கள் – சிலப்பதிகாரம், மணிமேகலை</p>
+      <label><input type="radio" name="q14" value="I, II மட்டும் சரி">I, II மட்டும் சரி</label>
+      <label><input type="radio" name="q14" value="I, II, III, IV அனைத்தும் சரி">I, II, III, IV அனைத்தும் சரி</label>
+	  <label><input type="radio" name="q14" value="III, IV மட்டும் சரி">III, IV மட்டும் சரி</label>
+      <label><input type="radio" name="q14" value="II, III மட்டும் சரி">II, III மட்டும் சரி</label><br>
+	</div>
+
+    
+  <button type="button" onclick="checkAnswers()">சரிபார்க்கவும்</button>
+  
+  </form>
+
+
+<h3 id="result"></h3>
+
+</div>
+
+  <script>
+function checkAnswers() {
+  let score = 0;
+
+  const answers = {
+    q1: "கபிலர்",
+    q2: "தொல்காப்பியம்",
+    q3: "கார்நாற்பது",
+    q4: "நற்றிணை",
+    q5: "திருவள்ளுவமாலை",
+    q6: "5",
+    q7: "மாத்திரை",
+    q8: "அரை மாத்திரை",
+    q9: "அரை மாத்திரை",
+    q10: "3.5",
+    q11: "I, II, III, IV அனைத்தும் சரி",
+    q12: "I, II, III, IV அனைத்தும் சரி",
+    q13: "I, II, III, IV அனைத்தும் சரி",
+    q14: "I, II, III, IV அனைத்தும் சரி"
+  };
+
+  let unanswered = [];
+
+  // ✅ Step 1: Check unanswered மட்டும்
+  for (let q in answers) {
+    let selected = document.querySelector(`input[name="${q}"]:checked`);
+    if (!selected) {
+      unanswered.push(q);
+    }
+  }
+
+  // 🚨 If any unanswered → STOP here
+  if (unanswered.length > 0) {
+    document.getElementById("result").style.color = "red";
+    document.getElementById("result").innerText =
+      "தயவுசெய்து அனைத்து கேள்விகளுக்கும் பதிலளிக்கவும்! விடுபட்டவை: " +
+      unanswered.join(", ");
+    return;
+  }
+
+  // ✅ Step 2: Now do highlighting + score
+  for (let q in answers) {
+    let options = document.querySelectorAll(`input[name="${q}"]`);
+
+    options.forEach(option => {
+      let label = option.parentElement;
+      label.classList.remove("correct", "wrong");
+
+      if (option.value === answers[q]) {
+        label.classList.add("correct");
+      }
+
+      if (option.checked) {
+        if (option.value === answers[q]) {
+          score++;
+        } else {
+          label.classList.add("wrong");
+        }
+      }
+    });
+  }
+
+  // ✅ Final score
+  document.getElementById("result").style.color = "green";
+  document.getElementById("result").innerText =
+    "உங்கள் மதிப்பெண்: " + score + "/" + Object.keys(answers).length;
+}
+
+</script>
+</body>
+</html>
